@@ -1,4 +1,9 @@
 spring:
   application:
     name:flyiocicd
+logging:
+  level:
+    com: DEBUG
+
+
 

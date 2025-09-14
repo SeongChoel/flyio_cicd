@@ -1,3 +1,25 @@
+spring:
+  datasource:
+    url : jdbc:postgresql://seongchoel-db.internal:5432/surl_prod
+    username: postgres
+    password: ov0RayPXITb7SCT
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      auto-commit: false
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: false
+        highlight_sql: false
+        use_sql_comments: false
+
 logging:
   level:
     com: INFO
+
+    org.hibernate.SQL: INFO
+    org.hibernate.orm.jdbc.bind: INFO
+    org.hibernate.orm.jdbc.extract: INFO
+    org.springframework.transaction.interceptor: INFO
